@@ -1,7 +1,7 @@
 // ==UserScript==
 // @id            nidev
 // @name          CleanEnhaJS
-// @version       20150513
+// @version       20150514
 // @namespace     https://g.nidev.org/clean-enha.js/
 // @author        Nidev
 // @homepage      http://g.nidev.org/clean-enha.js
@@ -10,7 +10,9 @@
 // @include       https://mirror.enha.kr/wiki/*
 // @include       https://rigvedawiki.net/r1/wiki.php/*
 // @include       https://namu.wiki/w/*
+// @include       http://namu.wiki/w/*
 // @include       https://namu.mirror.wiki/wiki/*
+// @include       http://namu.mirror.wiki/wiki/*
 // @run-at        document-end
 // ==/UserScript==
 
