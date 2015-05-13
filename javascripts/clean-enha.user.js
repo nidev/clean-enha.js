@@ -7,10 +7,10 @@
 // @homepage      http://g.nidev.org/clean-enha.js
 // @description   I need KFC fried chicken
 // @grant   none
-// @include       /^http?://mirror.enha.kr/*/
-// @include       /^http?://rigvedawiki.net/r1/wiki.php/*/
-// @include       /^http?://namu.wiki/w/*/
-// @include       /^http?://namu.mirror.wiki/wiki/*/
+// @include       https://mirror.enha.kr/wiki/*
+// @include       https://rigvedawiki.net/r1/wiki.php/*
+// @include       https://namu.wiki/w/*
+// @include       https://namu.mirror.wiki/wiki/*
 // @run-at        document-end
 // ==/UserScript==
 
