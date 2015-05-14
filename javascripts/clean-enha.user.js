@@ -34,6 +34,9 @@
 
   var i=0;
   for( ; i < a.length ; i++) {
+    // title 속성이 urlencoded이면 처리하지 않음
+    if (a[i].title[0] == "%") continue;
+
     // 위키 항목 링크를 감지하는 조건
     // id 속성이 없음 /  title 속성이 존재해야함 / title과 <a>~</a> 사이의 내용이 다른지 체크
     if (!a[i].id && a[i].title && a[i].title !== a[i].innerHTML) {
