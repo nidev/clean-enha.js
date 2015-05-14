@@ -20,13 +20,18 @@ clean-enha.js 는 리그베다/엔하 계통 위키에서 몇몇 요소에 불�
 ## 이용방법
 이 코드 자체는 브라우저 확장 기능으로 작성되어있지 않아, 개발자 콘솔을 사용하여 직접 실행해야합니다.
 
-북마크릿으로 실행하는 방법도 있습니다. 아래의 소항목을 참고해 주세요.
+하지만 [Greasemonkey](https://addons.mozilla.org/ko/firefox/addon/greasemonkey/)로 대표할 수 있는 [Userscript](http://whatis.techtarget.com/definition/user-script) 플러그인/확장기능을 사용하는 방법이 존재합니다. 또한 북마크릿으로 실행하는 방법도 있습니다. 아래의 두 소항목을 참고하십시오.
 
-### 브라우저의 북마크릿(bookmarklet)으로 만들어 실행하기
+### Userscript 로 설치하기
+[유저스크립트 배포 페이지](http://g.nidev.org/clean-enha.js)를 통해 Userscript 가동을 위한 플러그인과 Userscript용 Clean-enha.js를 설치하십시오.
 
-[북마크릿 배포 페이지]()를 통해, 브라우저 북마크로 이 스크립트를 추가하실 수 있습니다.
+### 브라우저의 북마크릿(Bookmarklet)으로 만들어 실행하기
 
-추가 후, 해당 페이지에서 북마크를 여는 것으로 clean-enha.js가 호출됩니다.
+북마크릿(Bookmarklet)이란, 북마크(Bookmark;즐겨찾기)에 일반적으로 웹사이트의 제목과 주소를 담는 것과는 달리 주소 부분에 단축된 자바스크립트 코드를 넣어서 북마크를 열 때 입력된 자바스크립트가 실행되도록 만든 것입니다.
+
+Userscript가 지원되지 않는 경우 본 방법을 통해서 번거롭지만, 매번 페이지를 연 후 실행하는 것으로 Clean-enha.js의 기능을 이용할 수 있습니다.
+
+[Clean-enha.js 한 줄 버전](https://raw.githubusercontent.com/nidev/clean-enha.js/master/inlined-clean-enha.js)의 내용물을 브라우저 북마크를 추가할 때 '주소' 부분에 넣어두면, 북마크를 여는 것으로 본 스크립트를 실행할 수 있습니다.
 
 ## 저작권 및 재배포 조항
 
