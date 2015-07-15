@@ -1,7 +1,7 @@
 // ==UserScript==
 // @id            nidev
 // @name          CleanEnhaJS
-// @version       20150714
+// @version       20150715
 // @namespace     https://g.nidev.org/clean-enha.js/
 // @author        Nidev
 // @homepage      http://g.nidev.org/clean-enha.js
