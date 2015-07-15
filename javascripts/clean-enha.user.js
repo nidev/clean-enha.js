@@ -1,7 +1,7 @@
 // ==UserScript==
 // @id            nidev
 // @name          CleanEnhaJS
-// @version       20150515
+// @version       20150714
 // @namespace     https://g.nidev.org/clean-enha.js/
 // @author        Nidev
 // @homepage      http://g.nidev.org/clean-enha.js
@@ -16,32 +16,4 @@
 // @run-at        document-end
 // ==/UserScript==
 
-
-(function() {
-  // %% 취소선 삭제 작업
-  // 취소선 엘리먼트 전체를 수집
-  var s = document.getElementsByTagName('del');
-
-  var i=0;
-  for ( ; i < s.length ;i++) {
-    // display:none CSS 적용하여 숨김
-    s[i].style.cssText='display:none;'
-  };
-
-  // %% 위키 링크 윗첨자 작업(링크된 이름과 실제 보여질 항목이 다른 링크)
-  // <a> 링크 엘리먼트 전체를 수집
-  var a = document.getElementsByTagName('a');
-
-  var i=0;
-  for( ; i < a.length ; i++) {
-    // title 속성이 urlencoded이면 처리하지 않음
-    if (a[i].title[0] == "%") continue;
-
-    // 위키 항목 링크를 감지하는 조건
-    // id 속성이 없음 /  title 속성이 존재해야함 / title과 <a>~</a> 사이의 내용이 다른지 체크
-    if (!a[i].id && a[i].title && a[i].title !== a[i].innerHTML) {
-      // 해당 경우에 윗첨자로 원제목을 별도로 표시한다
-      a[i].innerHTML += '<sup>' + a[i].title + '</sup>';
-    }
-  }
-})();
+(function(){var s=document.getElementsByTagName('del');for(var i=0;i<s.length;i++){s[i].style.cssText='display:none;'};var engine;var a;if(document.querySelector("#_core")){a=document.querySelector("article.namu-doc").getElementsByTagName("a");engine="namumirror"}else if(document.querySelector(".wiki-content")){a=document.querySelector(".wiki-content").getElementsByTagName("a");engine="namu"}else{a=document.getElementsByTagName('a');engine="enha"}if(!a)return;switch(engine){case"namumirror":for(var i=0;i<a.length;i++){if(a[i].getAttribute("class")!=="wiki-fn"&&a[i].href.indexOf('#')==-1){var title=decodeURI(a[i].pathname.substring(6,a[i].pathname.length));if(title!==a[i].innerHTML){a[i].innerHTML+='<sup>'+title+'</sup>'}}}break;case"namu":for(var i=0;i<a.length;i++){if(a[i].title&&a[i].getAttribute("class")==="wiki-link-internal"&&a[i].title!==a[i].innerHTML){a[i].innerHTML+='<sup>'+a[i].title+'</sup>'}}break;default:for(var i=0;i<a.length;i++){if(!a[i].id&&a[i].title&&a[i].title!==a[i].innerHTML){a[i].innerHTML+='<sup>'+a[i].title+'</sup>'}}}})();
