@@ -1,1 +1,0 @@
-(function(){var s=document.getElementsByTagName('del');var i=0;for(;i<s.length;i++){s[i].style.cssText='display:none;'};var a=document.getElementsByTagName('a');var i=0;for(;i<a.length;i++){if (a[i].title[0] == "%") continue;if(!a[i].id && a[i].title && a[i].title !== a[i].innerHTML){a[i].innerHTML+='<sup>'+a[i].title+'</sup>';}}})();
