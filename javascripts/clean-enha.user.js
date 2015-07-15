@@ -13,6 +13,8 @@
 // @include       http://namu.wiki/w/*
 // @include       https://namu.mirror.wiki/wiki/*
 // @include       http://namu.mirror.wiki/wiki/*
+// @include       https://namu.mirror.wiki/dark/*
+// @include       http://namu.mirror.wiki/dark/*
 // @run-at        document-end
 // ==/UserScript==
 
