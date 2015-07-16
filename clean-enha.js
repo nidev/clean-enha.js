@@ -31,7 +31,7 @@ var clean_enhajs = (function () {
   switch (engine) {
   case "namumirror":
     for (i = 0; i < a.length; i += 1) {
-      if (a[i].getAttribute("class") !== "wiki-fn" && a[i].href.indexOf('#') === -1) {
+      if (a[i].getAttribute("class") === null && a[i].href.indexOf('#') === -1) {
         // 경로 문제: /dark/~~~~~~ /wiki/~~~~~~~
         title = decodeURI(a[i].pathname.substring(6, a[i].pathname.length));
         if (title !== a[i].innerHTML) {
